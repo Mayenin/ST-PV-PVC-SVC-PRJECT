@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nirbos
+  namespace: devops
+  labels:
+    app: nirbos
+spec:
+  storageClassName: nirbos
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
